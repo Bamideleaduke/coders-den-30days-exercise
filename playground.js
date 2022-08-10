@@ -134,4 +134,25 @@ console.log(now.getDate());
 // console.log(daysInMonth)
 
 // Write a program which tells the number of days in a month, now consider leap year.
-// 🎉 CONGRATULATIONS ! 🎉 
+// 🎉 CONGRATULATIONS ! 🎉
+
+// let arr = [2, 4, 6, 2, 2, 4, 4, 6, 6];
+const mode = arr => {
+    const mode = {};
+    let max = 0, count = 0;
+    for(let i = 0; i < arr.length; i++) {
+      const item = arr[i];
+      
+      if(mode[item]) {
+        mode[item]++;
+      } else {
+        mode[item] = 1;
+      }
+      if(count < mode[item]) {
+        max = item;
+        count = mode[item];
+      }
+    } 
+    return {max,count};
+  };
+console.log(mode([2, 4, 6, 2, 2, 4, 4, 6, 6]))
