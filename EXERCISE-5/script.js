@@ -1,5 +1,7 @@
+import countriesArr from "./countries.js";
 // Exercise
 // Exercise: Level 1
+console.log(countriesArr[1])
 // const countries = [
 //   'Albania',
 //   'Bolivia',

@@ -1,3 +1,4 @@
+import countriess  from "./countries-data.js" 
 // Exercises
 // Exercises: Level 1
 const countries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland',"England"]
@@ -157,10 +158,42 @@ console.log(getFirstTenCountries(countriesJs))
 // Find out which letter is used many times as initial for a country name from the countries array (eg. Finland, Fiji, France etc)
 
 // Exercises: Level 3
+console.log(countriess[1].name);
 // Use the countries information, in the data folder. Sort countries by name, by capital, by population
-
+let sortName = countriess.sort((a,b)=>a.name.charCodeAt()-b.name.charCodeAt());
+let sortCapital = countriess.sort((a,b)=>a.capital.charCodeAt()-b.capital.charCodeAt());
+let sortPop = countriess.sort((a,b)=>a.population-b.population);
+console.log(sortCapital)
 // *** Find the 10 most spoken languages:
+let sortLang = countriess.filter(item=> {
+  // item.languages == "English"
+  (item.languages)
+})
+console.log(countriess.length)
+console.clear()
 
+function mostSpokenLang(c,n){
+  const spokenLang =c.reduce((acc,curr)=>{
+  let lang = curr.languages;
+  return [...acc,...lang]
+},[])
+console.log(spokenLang)
+const langCount = spokenLang.reduce((ac, cr) => {
+  return { ...ac, [cr]: ac[cr] + 1 || 1 };
+},{});
+console.log(langCount)
+const dataTemp = Object.entries(langCount).reduce((acc, cur) => {
+  return [...acc, { country: cur[0], count: cur[1] }];
+}, []);
+return dataTemp.sort((a,b)=>{return b.count - a.count}).slice(0,n)
+}
+console.log(mostSpokenLang(countriess,3))
+// console.log(sortLang.length)
+// const langLength = countriess.forEach(ele => {
+//   let langg = ele.languages
+//   if(ele.languages == langg){
+//   }
+// });
 // // Your output should look like this
 // console.log(mostSpokenLanguages(countries, 10))
 // [
@@ -184,7 +217,14 @@ console.log(getFirstTenCountries(countriesJs))
 // {country: 'Arabic',count: 25},
 // ]```
 // *** Use countries_data.js file create a function which create the ten most populated countries
-
+function mostPopulated(c,n){
+  const popS = c.sort((a,b)=>{return b.population - a.population}).slice(0,n)
+  return popS.map((cr)=>{
+    const t = {country:cr.name,count:cr.population}
+    return t
+  },{})
+}
+console.log(mostPopulated(countriess,3))
 // console.log(mostPopulatedCountries(countries, 10))
 
 // [
@@ -257,3 +297,22 @@ console.log('Mode: ', statistics.mode()) // {'mode': 26, 'count': 5}
 // Standard Deviation:  4.2
 // Frequency Distribution: [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
 // 🎉 CONGRATULATIONS ! 🎉
+function mostSpoken(c,n){
+ const sL = c.reduce((ac,cr)=>{
+  const lang = cr.languages
+  return [...ac,...lang]
+ },[])
+//  return sL
+for(let i =0;i<sL.length;i++){
+  sL
+  let count = 0;
+if(sL[i] === sL[i]){
+  // count+=l.length
+  // un = {lang:l,count:count}
+return {country:sL[i],count:sL[i].length}
+}else{
+  return null
+}
+}
+}
+console.log(mostSpoken(countriess,3))

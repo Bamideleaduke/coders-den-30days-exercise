@@ -145,5 +145,9 @@ for (const person in textParse) {
 }
 console.log(mostSkiled)
 
-
+// 
+const obj ='{"name":"John","age":20,"car":null}'
+for (let json in JSON.parse(obj)){
+    json
+}
 // 🎉 CONGRATULATIONS ! 🎉

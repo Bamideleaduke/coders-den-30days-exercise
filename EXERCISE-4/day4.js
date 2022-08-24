@@ -116,6 +116,34 @@ if(day = "Monday" || "Tuesday" || "Wednesday" || "Thursday" || "Friday"){
 console.log(weekDays)
 // Exercises: Level 3
 // Write a program which tells the number of days in a month.
+let january = 1;let february = 2; let march = 3;let april=4;let may = 5;let june=6;
+let july=7;let august=8;let september =9;let october = 10;let november = 11;let december=12;
+let monthh = "november";
+if(monthh == "january"){
+    console.log (`${monthh} has ${new Date(new Date().getFullYear(),january,0).getDate()} days`)
+}else if(monthh == "february"){
+    console.log (`${monthh} has ${new Date(new Date().getFullYear(),february,0).getDate()} days`)
+}else if(monthh == "march"){
+    console.log (`${monthh} has ${new Date(new Date().getFullYear(),march,0).getDate()} days`)
+}else if(monthh == "april"){
+    console.log (`${monthh} has ${new Date(new Date().getFullYear(),april,0).getDate()} days`)
+}else if(monthh == "may"){
+    console.log (`${monthh} has ${new Date(new Date().getFullYear(),may,0).getDate()} days`)
+}else if(monthh == "june"){
+    console.log (`${monthh} has ${new Date(new Date().getFullYear(),june,0).getDate()} days`)
+}else if(monthh == "july"){
+    console.log (`${monthh} has ${new Date(new Date().getFullYear(),july,0).getDate()} days`)
+}else if(monthh == "august"){
+    console.log (`${monthh} has ${new Date(new Date().getFullYear(),august,0).getDate()} days`)
+}else if(monthh == "september"){
+    console.log (`${monthh} has ${new Date(new Date().getFullYear(),september,0).getDate()} days`)
+}else if(monthh == "october"){
+    console.log (`${monthh} has ${new Date(new Date().getFullYear(),october,0).getDate()} days`)
+}else if(monthh == "november"){
+    console.log (`${monthh} has ${new Date(new Date().getFullYear(),november,0).getDate()} days`)
+}else if(monthh == "december"){
+    console.log (`${monthh} has ${new Date(new Date().getFullYear(),december,0).getDate()} days`)
+}
 //   Enter a month: January
 //   January has 31 days.
 

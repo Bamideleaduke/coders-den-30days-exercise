@@ -156,3 +156,115 @@ const mode = arr => {
     return {max,count};
   };
 console.log(mode([2, 4, 6, 2, 2, 4, 4, 6, 6]))
+// 
+// 
+function isPrime(num) {
+    if(num < 2) return false;
+    for (let k = 2; k < num; k++){
+      if( num % k == 0){
+        return false;
+      }
+    }
+    return num;
+  }
+  console.log(isPrime(37))
+//   
+function isPrime(num) {
+    for (let i = 2; i * i <= num; i++)
+        if (num % i === 0)
+        if(num )
+          return false; 
+    return num;
+}
+console.log(isPrime(38)) //41
+// 
+function myFunction(str) {
+str.split("");
+let inc=[]
+for(let i=0;i<str.length;i++){
+//  inc.push(str[i])
+inc.push(String.fromCharCode(str[i].charCodeAt(0)+1));
+}
+// ltt.forEach(ele => {
+// inc.push(String.fromCharCode(ele.charCodeAt(0)+1));
+// });
+return inc.join("")
+}
+console.log(myFunction('bnchmf'))
+// 
+function myFunction(str) {
+    const arr = [...str];
+    const correctedArray = arr.map(e => String.fromCharCode(e.charCodeAt()+1));
+    return correctedArray.join('');
+  }
+  console.log(myFunction('bgddrd'))
+// 
+// function nextChar(c) {
+//     return String.fromCharCode(c.charCodeAt(0) + 1);
+// }
+
+// const correctWord = (str) => {
+//     let word = '';
+//     for(let i =0; i < str.length ; i++) {
+//         word += nextChar(str[i]);
+//     }
+//     return word;
+// };
+// const input = "bnchmf";
+// console.log(input.split(""));
+// console.log(correctWord(input));
+
+function myFunction(p){
+    let d ;
+    for(let i = 2;i<=p;i++){
+       
+        return d
+    }
+}
+console.log(myFunction(38)) //41
+// 
+function getPrime(n) {
+    let factor;
+    for (let i = 0; i < n; i++) {
+      factor = 0;
+      
+      for (let j = 1; j <=n; j++) {
+        
+        if (i % j == 0) {
+          factor++;
+        }
+      }
+      if (factor == 2) console.log(i);
+    }
+  }
+  console.log(getPrime(41));
+  // 
+  // If each string in arr1 is odd, times it's price in arr2 *2
+  // If each string in arr1 is even, times it's price in arr2 /2
+  let arr1 = ["str","hi","Hello","Yo","Bye"];
+  let arr2 = [20,30,40,50,60];
+  let rep = arr1.length
+  function array(a,b){
+    let qd=[];
+    for (let i = 0;i <rep;i++) {
+      let aa = a[i];
+      let  bp = b[i];
+      let dArr = [aa,bp];
+    if(aa.length%2==0){
+      bp = b[i]*2
+    }else{
+      bp = b[i]/2
+    }
+    return `The price of ${aa} is ${bp}`
+    
+      // dArr = [a[i], b[i]]
+      // // console.log(dArr)
+      // if(a[i].length %2==0 ){
+      //   `price of ${a[i]} is ${b[i]/2} `
+      // }else if(a[i].length %2!==0){
+      // `price of ${a[i]} is ${b[i]*2}`
+      // }
+      // return dArr
+    }
+  }
+  console.log(array(arr1,arr2))

@@ -25,10 +25,7 @@ is_valid_variable('first-name') # False
 is_valid_variable('1first_name') # False
 is_valid_variable('firstname') # True
 */
-
-const validJs = "firstname first_name"
-
-
+const validJs = "firstname first_name";
 const pattern = new RegExp("firstname")
 const confirm = pattern.test(validJs)
 console.log(confirm)
@@ -46,7 +43,6 @@ console.log(is_valid_variable("first_name"))
 
 Exercises: Level 2
 Write a function called tenMostFrequentWords which get the ten most frequent word from a string? */
-
     const paragraph = `I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`
     const arr = paragraph.split(" ")
     console.log(arr)
@@ -115,13 +111,10 @@ function cleanText(r) {
 // 1. Write a function which find the most frequent words. After cleaning, count three most frequent words in the string.
 const cleanedText = `I am a teacher, and I love teaching;. There is nothing; as more rewarding as educating and empowering people. ;I found teaching more interesting than any other jobs. Does this motivate you to be a teacher!? `
 console.log(cleanedText.match(/\w+/g));
-
 function mostFrequentWords(cleanedText){
 const cleanSentence = cleanedText.match(/\w+/g);
 console.log(cleanSentence);
-
 let occurance = {};
-
 for (let word of cleanSentence){
   if(occurance[word]) {
     occurance[word]++;
@@ -130,7 +123,7 @@ for (let word of cleanSentence){
   }
 }
 console.log(occurance)
-console.log(Object.values(occurance))
+// console.log(Object.values(occurance))
 let max = 0;
 let mostOccurred = "";
 
