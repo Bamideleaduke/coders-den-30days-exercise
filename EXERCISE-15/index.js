@@ -12,7 +12,7 @@ class Animal {
         const info = "A " +this.name+ " can live up to " + this.age +" years";
         return info;
     }
-    get getscore(){
+    get getScore(){
        return this.score
     }
     set setAnimal(score){
@@ -76,6 +76,5 @@ console.log('Mode: ', statistics.mode()) // {'mode': 26, 'count': 5}
 // console.log('Variance: ',statistics.var()) // 17.5
 // console.log('Frequency Distribution: ',statistics.freqDist()) // [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)]
 
-
-// Create a class called PersonAccount. It has firstname, lastname, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is also a set of expenses and its description.
+// Create a class called PersonAccount. It has first-name, last-name, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is also a set of expenses and its description.
 // 🎉 CONGRATULATIONS ! 🎉

@@ -130,20 +130,31 @@ console.log(studJson)
 // Exercises Level 3
 // Parse the txt JSON to object.
 let textParse = JSON.parse(txt,undefined,2)
-console.log(textParse)
-// Find the the user who has many skills from the variable stored in txt.
 let max = 0;
-let mostSkiled;
+let mostSkilled;
 for (const person in textParse) {
-  let usersSkill = textParse[person].skills.length
+  let usersSkill = textParse[person].skills.length;
     if(usersSkill > max){
         max = usersSkill
-        // mostSkiled = [person,max]
-        mostSkiled = `${person.toUpperCase()} has the highest skills of ${max} `
+        mostSkilled = `${person.toUpperCase()} has the highest skills of ${max} `
     }
-    // console.log(person)
 }
-console.log(mostSkiled)
+console.log(mostSkilled)
+
+// console.log(textParse)
+// Find the the user who has many skills from the variable stored in txt.
+// let max = 0;
+// let mostSkilled;
+// for (const person in textParse) {
+//   let usersSkill = textParse[person].skills.length
+//     if(usersSkill > max){
+//         max = usersSkill
+//         // mostSkilled = [person,max]
+//         mostSkilled = `${person.toUpperCase()} has the highest skills of ${max} `
+//     }
+//     // console.log(person)
+// }
+// console.log(mostSkilled)
 
 // 
 const obj ='{"name":"John","age":20,"car":null}'
