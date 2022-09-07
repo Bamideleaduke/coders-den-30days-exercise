@@ -268,3 +268,22 @@ function getPrime(n) {
     }
   }
   console.log(array(arr1,arr2))
+  // 
+  // 
+  let arr =  [ '2-3','4-8','5-9', '5-9','0-4', '2-3','2-3','2-3','2-3','3-9', '4-8','4-8'];
+  let count = {};
+
+   for(item of arr.flat()){
+      if(count[item]){
+        count[item]++
+      }else{
+       count[item] = 1
+      }
+    }
+    console.log(forL)
+    // let mapp = arr.reduce(function(ac,cr){
+    //   return (
+    //     ac[cr] ? ac[cr]++ : (ac[cr] = 1),ac
+    //     ); 
+    // },{});
+    // console.log(mapp)
