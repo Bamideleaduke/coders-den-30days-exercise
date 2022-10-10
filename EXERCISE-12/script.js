@@ -9,12 +9,16 @@ console.log(annualIncome)
 
 
 
-/*
-The position of some particles on the horizontal x-axis -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers and find the distance between the two furthest particles.
-points = ['-1', '2', '-4', '-3', '-1', '0', '4', '8']
-sortedPoints =  [-4, -3, -1, -1, 0, 2, 4, 8]
-distance = 12
-*/
+
+const question = "The position of some particles on the horizontal x-axis -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction. Extract these numbers and find the distance between the two furthest particles.";
+const point = question.match(/-?\d/g);
+const sortedarr = point.map(item => +item).sort((a,b)=> a-b);
+const distance = sortedarr[sortedarr.length-1] - sortedarr[0]
+console.log(distance)
+
+// points = ['-1', '2', '-4', '-3', '-1', '0', '4', '8']
+// sortedPoints =  [-4, -3, -1, -1, 0, 2, 4, 8]
+// distance = 12
 
 
 /*

@@ -99,9 +99,9 @@ const fetchData = async () =>{
                 ac[cr] ? ac[cr]++ : (ac[cr] = 1),ac
                 ); 
             },{});
-    console.log('Cat-Weight in metric',inner)
+    console.log('Cat-Weight in metric',inner);
     }catch(err){
-      console.log('rejected',err)
+      console.log('rejected',err);
     }
 }
 fetchData()

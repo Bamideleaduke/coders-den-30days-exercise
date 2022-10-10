@@ -141,10 +141,21 @@ return e.filter(ell=> ell.includes("land") )
 }
 console.log(categorizeCountries(countries))
 // Create a function which return an array of objects, which is the letter and the number of times the letter use to start with a name of a country.
-function arrObj(x){
-return {}
+const countriesStart = ['Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland',"England",'Newyork','Newyok']
+function arrObj(x,y){
+  // reduce
+  const red = x.reduce((ac,cr)=>{
+    return [cr.startsWith(y),ac]
+  })
+  return red
+  // filter
+  // const cc = x.filter(country =>{
+  //  return country.startsWith(y)
+//   return (country.match(new RegExp(y,'g'))) && country;
+//    }).length
+// return {letter:y,count:cc}
 }
-console.log(arrObj("Seat"))
+console.log(arrObj(countriesStart,'N'))
 // Declare a getFirstTenCountries function and return an array of ten countries. Use different functional programming to work on the countries.js array
 const countriesJs = ['Finland', 'Sweden', 'Denmark', 'Norway', 'Iceland',"England","Nigeria","Dubai","England","Egypt","Poland","Ukraine","Canada","Kenya","Togo","Benin Rep","Niger"];
 function getFirstTenCountries(e){

@@ -280,10 +280,52 @@ function getPrime(n) {
        count[item] = 1
       }
     }
-    console.log(forL)
+    console.log(count)
     // let mapp = arr.reduce(function(ac,cr){
     //   return (
     //     ac[cr] ? ac[cr]++ : (ac[cr] = 1),ac
     //     ); 
     // },{});
     // console.log(mapp)
+    // 
+
+    // reduce
+
+    const arrr1 = [
+      [1, 2, 3],
+      [4, 5, 6],
+      [7, 8, 9],
+    ];
+const conc = arrr1.reduce((ac,cr)=> [...ac,...cr]);
+console.log(conc)
+
+    const arrr2 = [
+      { a: [1, 3, 4], b: [2, 5, 6], c: [1, 2, 3] },
+      { a: [1, 3, 4], b: [2, 5, 6], c: [4, 2, 6] },
+      { a: [1, 3, 4], b: [2, 5, 6], c: [7, 8, 6] }
+    ];
+let conc2 = arrr2.reduce((ac,cr) => //{return [...new Set([...ac,...c])];},[] )
+{
+    cr.c.forEach(val => {
+        ac.push(val)
+      })
+     return  [...new Set(ac)]
+    },[])
+    console.log(conc2)
+
+    // 
+    const minusFunc = (ar) => {
+      let even = 0;
+      let odd = 0;
+      for (let i = 0; i < ar.length; i++){
+        if ( i%2 === 0 ){
+          even += ar[i]
+        } else {
+          odd += ar[i]
+        }
+      }
+      return even - odd
+    }
+    console.log(minusFunc([1,2,3]))
+
+

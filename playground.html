@@ -7,6 +7,26 @@
     <title>PlayGround</title>
 </head>
 <body>
-    <script src="playground.js"></script>
+    <div>
+        <h1>Hello, This is an interview</h1>
+        <h1 class="two"></h1>
+        <h1 class="three"></h1>
+    </div>
+    <!-- <script src="playground.js"></script> -->
+    
+    <script src="interview.js"></script>
+    <script>
+const writeDoc = document.querySelector(".two");
+const writeD = document.querySelector(".three");
+// inner Html can add text or html element or elements as a child 
+writeDoc.innerHTML = "<h2>Hello<h2>";
+    writeDoc.className = "title";
+    writeDoc.classList.add("title",'header');
+    writeDoc.setAttribute('id', 'third');
+    console.log(writeDoc);
+    // text content will add text to the html element
+writeD.textContent = "<h2>Hello<h2>"
+        
+    </script>
 </body>
 </html>
