@@ -1,6 +1,3 @@
-// variables
-
-
 // body
 const body = document.querySelector("body");
 body.style.display = "grid";
@@ -10,7 +7,6 @@ body.style.textAlign = "center";
 
 // author
 let author = document.querySelector("#author");
-// author.style.color = "red";
 author.innerHTML = author.innerHTML.replace(/\d+/g,"<span id='yr'>2022</span>");
 let year = document.getElementById("yr");
 year.style.fontSize = "3rem"
@@ -57,7 +53,6 @@ menu.style.listStyleType = "none";
 menu.style.marginTop = "3rem"
 
 const challenge = document.querySelectorAll("li");
-
 // changing colors for each class name
 challenge.forEach((title, i) => {
     title.style.marginBottom = '2px';
@@ -69,7 +64,6 @@ challenge.forEach((title, i) => {
       title.style.backgroundColor = 'yellow'
     }else{
       title.style.backgroundColor = 'red'
-
     }
   })
 // list ofchallenge
