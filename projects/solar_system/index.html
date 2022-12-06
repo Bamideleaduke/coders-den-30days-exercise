@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <title>Solar Sysytem</title>
+</head>
+<body>
+    <main>
+        <section class="form">
+            <h1 class="form-title">Calculate a weight of an object on a planet</h1>
+            <form action="#" id="weightCalc">  
+                <input type="text" id="mass" placeholder="Mass in kilogram">
+
+                <select name="planet" id="planet">
+                <option  value="default" disabled >--select planet--</option>
+                <option class="opt" value="Earth">Earth </option>
+                <option class="opt" value="Jupiter">Jupiter </option>
+                <option class="opt"
+                 value="Mars">Mars</option>
+                <option class="opt" value="Mercury">Mercury</option>
+                <option class="opt" value="Moon">Moon</option>
+                <option class="opt" value="Neptune">Neptune</option>
+                <option class="opt" value="Pluto">Pluto</option>
+                <option class="opt" value="Saturn">Saturn</option>
+                <option class="opt" value="Uranus">Uranus</option>
+                <option class="opt" value="Venus">Venus</option>
+               </select>
+               <button>Calculate weight</button>
+               
+               <!-- <div class="dropdown">
+                <button>HubSpot Resources</button>
+                <div class="dropdown-content">
+                <a href="https://blog.hubspot.com/">Blog</a>
+                <a href="https://academy.hubspot.com/">Academy</a>
+                <a href="https://www.youtube.com/user/hubspot">YouTube</a>
+                </div>
+              </div> -->
+            </form>
+        </section>
+       <div class="err">
+        <div class="notification">Mass is required</div>
+       </div>
+    <div class="container">
+        <div class="img">
+                <img class="globe" id="earth" src="./assets/earth.png" alt="">
+                <!-- <img class="globe" id="jupiter" src="./assets/jupiter.png" alt="">
+                <img class="globe" id="mars" src="./assets/mars.png" alt="">
+                <img class="globe" id="mercury" src="./assets/mercury.png" alt="">
+                <img class="globe" id="moon" src="./assets/moon.png" alt="">
+                <img class="globe" id="neptune" src="./assets/neptune.png" alt="">
+                <img class="globe" id="pluto" src="./assets/pluto.png" alt="">
+                <img class="globe" id="saturn" src="./assets/saturn.png" alt="">
+                <img class="globe" id="uranus" src="./assets/uranus.png" alt="">
+                <img class="globe" id="venus" src="./assets/venus.png" alt=""> -->
+         </div>
+            
+    <div class="card">
+    <div class="description"><p>The weight of the object on <strong class="planet">planet</strong>  
+        <div class="value">1000</div> 
+    </p></div>
+    </div>
+
+    </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

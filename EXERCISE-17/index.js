@@ -13,15 +13,19 @@ const infoJson = JSON.stringify(info,undefined,4);
  localStorage.setItem("personInfo",infoJson);
 console.log(localStorage);
 
+localStorage.setItem("name","Temi");
+console.log(localStorage.getItem("name"));
 // getItem from the storage
-let firstName = localStorage.getItem('firstName');
-let getP = JSON.parse(firstName)
-console.log(getP)
+// let firstName = localStorage.getItem('firstName');
+// let getP = JSON.parse(firstName)
+// console.log(getP)
 // let parseInfo = JSON.parse(infoJson);
-// let inffo = localStorage.getItem('personInfo')
+// let inffo = localStorage.getItem("parseInfo")
 // console.log(inffo);
-// let age = localStorage.getItem('age');
-// console.log(firstName,age)
+// let age = localStorage.getItem(inffo.age);
+// console.log(age)
+
+
 
 // Exercises: Level 2
 // Create a student object. The student object will have first name, last name, age, skills, country, enrolled keys and values for the keys. Store the student object in your browser localStorage.
