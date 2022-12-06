@@ -43,7 +43,6 @@ fetch(countriesAPI)
     // console.log("Countries",countInner.sort())
     let dd = [];
    for(let {name,population,languages} of data){
-     dd.push({"Country":name,"Population":population,"Languages":languages })
         }
   let dap = dd.sort((a,b)=> b.Population - a.Population).slice(0,10);
     console.log(dap)
